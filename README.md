@@ -33,11 +33,12 @@ Webserver construction Training Education In ComputerEng.
 #### PHP Basic
 1. Just Print Out on Web
 - echo
-<?php
+
+		<?php
 			$name = "산기대";
 			$text = "hello kpu!!";
 			$text2 = 'e517';
-?>
+		?>
 
 2. Value Define
 -$value
@@ -77,16 +78,16 @@ Webserver construction Training Education In ComputerEng.
 2. GET 방식 예제
 test.php 일부분
 
-<?php
-	//get방식의 id에 있는 파라미터
-	$board_id = $_GET['id'];	
-	$type = $_get['board_type'];
-
-	//$sql = "select * from board where id = ".$board_id;
-
-	//파라미터 넘기기
-	echo 'test.php 입니닷!!'.$board_id."<br>"."타입은".$type;
-?>	
+		<?php
+			//get방식의 id에 있는 파라미터
+			$board_id = $_GET['id'];	
+			$type = $_get['board_type'];
+		
+			//$sql = "select * from board where id = ".$board_id;
+		
+			//파라미터 넘기기
+			echo 'test.php 입니닷!!'.$board_id."<br>"."타입은".$type;
+		?>	
 
 #### POST Method in PHP
 1. POST
@@ -95,25 +96,26 @@ test.php 일부분
 단, 남발하지 않는 이유는 보안이 필요한 기능에만 사용
     
 2. GET 방식 예제
-test.php 일부분
+- test.php 일부분
 
-<form action="mypost.php" method="post">
-	<input type="text" name="id">
-	<input type="password" name="password">
-	<button>
-		로그인 하러 가기!!
-	</button>
-</form>
-mypost.php
+		<form action="mypost.php" method="post">
+			<input type="text" name="id">
+			<input type="password" name="password">
+			<button>
+				로그인 하러 가기!!
+			</button>
+		</form>
+		
+- mypost.php
+		
+		<?php
+			$id = $_POST['id'];
+			$pw = $_POST['password'];
+		
+			echo "아이디는 : ".$id."<br>비밀번호는 : ".$pw;
+		?>
 
-<?php
-	$id = $_POST['id'];
-	$pw = $_POST['password'];
-
-	echo "아이디는 : ".$id."<br>비밀번호는 : ".$pw;
-?>
-
-
+#### Function in PHP
     
     
     
