@@ -1,4 +1,64 @@
-## Welcome to GitHub Pages
+## KoreaPolyTechnic University
+
+Webserver construction Training Education In ComputerEng.
+
+- PHP.org
+[http://php.net/](http://php.net/)
+
+- Study PHP
+[W3schools](https://www.w3schools.com/php/default.asp)
+[TCPschool](http://tcpschool.com/php/php_intro_intro)
+[opentutorial_CodingEverybody](https://www.opentutorials.org/course/3018)
+[TutorialSPoint PHP](https://www.tutorialspoint.com/php/index.htm)
+[TutorialSPoint PHP7](https://www.tutorialspoint.com/php7/index.htm)
+[TutorialSPoint CakePHP](https://www.tutorialspoint.com/cakephp/index.htm)
+[TutorialSPoint FuelPHP](https://www.tutorialspoint.com/fuelphp/index.htm)
+
+</hr>
+### Development
+#### IDE
+- Goorm
+Web IDE @ Korea
+URL : [GoormIDE](https://ide.goorm.io/)
+이거 존나 편함
+
+</hr>
+## Day 01 20180110
+### Class 01 IDE Setting for PHP in Web
+1. Using GoormIDE
+2. Make Project PHP
+
+#### PHP Basic
+1. Just Print Out on Web
+- echo
+<?php
+			$name = "산기대";
+			$text = "hello kpu!!";
+			$text2 = 'e517';
+?>
+
+2. Value Define
+-$value
+'$' and Naming 
+
+		<!-- Get/Set Data-->
+		<?php
+			$name = "산기대";
+			$text = "hello kpu!!";
+			$text2 = 'e517';
+		?>
+		
+		<!-- Just use value-->
+		<?php
+			echo $name."halo"."안녕".$text;
+			echo $text;
+			echo $text2;
+		?>
+    
+    
+    
+    
+    
 
 You can use the [editor on GitHub](https://github.com/IKKIson/WebServerInPHP/edit/master/index.md) to maintain and preview the content for your website in Markdown files.
 
