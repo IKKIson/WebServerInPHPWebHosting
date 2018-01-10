@@ -24,9 +24,9 @@ Webserver construction Training Education In ComputerEng.
     - 이거 존나 편함
     
 - Slack
-    - Development Tool
+    - Development Tool
     - URL : [SLACK](https://slack.com/)
-    - 이것도 존나 좋음
+    - 이것도 존나 좋음
 
 </hr>
 
