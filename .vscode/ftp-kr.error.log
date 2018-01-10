@@ -1,0 +1,7 @@
+[Error]
+message: E/Github_LocalRespository/WebServerInPHP: No such file or directory[450]
+[Stack Trace]
+Error: E/Github_LocalRespository/WebServerInPHP: No such file or directory[450]
+	at _errorWrap (C:\Users\손익현\.vscode\extensions\ruakr.ftp-kr-1.1.7\out\ftp.js:529:16)
+	at _list.then.catch.err (C:\Users\손익현\.vscode\extensions\ruakr.ftp-kr-1.1.7\out\ftp.js:256:19)
+	at <anonymous>
