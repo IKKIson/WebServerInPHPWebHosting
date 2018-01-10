@@ -1,4 +1,4 @@
-## KoreaPolyTechnic University
+## KoreaPolyTechnic University PHP Web Class
 
 Webserver construction Training Education In ComputerEng.
 
@@ -62,8 +62,64 @@ URL : [GoormIDE](https://ide.goorm.io/)
 			echo $text;
 			echo $text2;
 		?>
+
+</hr>
     
+### Class 02 GET & POST Method Page URL Parameter
+1. 게시판, 글, 글리스트 등 조회 기능 시 GET으로 작성
+    - GET방식의 경우 URL주소에 파라미터 값이 노출이되므로 게시판, 글 등 조회기능에 주로사용한다.
+2. 로그인, 게시글 작성 등 생성, 수정 기능 시 POST로 작성
+    - 로그인이나 개인정보, 은닉이 필요한 데이터들을 사용해야 되는 경우 POST 방식을 사용한다.
+
+#### GET Method in PHP
+1. URL 주소를 이용한 GET방식
+http://ikkisonwebserverinphp.run.goorm.io/IKKIson/test.php?id=11&board_type=parametertest
+URL 주소 뒤에 '?'를 사용하여 이 후 나오는 것들은 파라미터값 사용으로 처리한다.
+URL 주소 : http://ikkisonwebserverinphp.run.goorm.io/IKKIson/test.php
+파라미터사용 : ?id=11
+파라미터 여러개사용 : ?id=11&board_type=parametertest
+	파라미터를 여러개 사용할 경우 '&'로 파라미터들을 구분한다.
+	
+2. GET 방식 예제
+test.php 일부분
+
+<?php
+	//get방식의 id에 있는 파라미터
+	$board_id = $_GET['id'];	
+	$type = $_get['board_type'];
+
+	//$sql = "select * from board where id = ".$board_id;
+
+	//파라미터 넘기기
+	echo 'test.php 입니닷!!'.$board_id."<br>"."타입은".$type;
+?>	
+
+#### POST Method in PHP
+1. POST
+로그인 시 대놓고 아이디어 비밀번호가 명시되있으면 안된다.
+일반적으로 보안이 필요한 것들은 POST를 사용
+단, 남발하지 않는 이유는 보안이 필요한 기능에만 사용
     
+2. GET 방식 예제
+test.php 일부분
+
+<form action="mypost.php" method="post">
+	<input type="text" name="id">
+	<input type="password" name="password">
+	<button>
+		로그인 하러 가기!!
+	</button>
+</form>
+mypost.php
+
+<?php
+	$id = $_POST['id'];
+	$pw = $_POST['password'];
+
+	echo "아이디는 : ".$id."<br>비밀번호는 : ".$pw;
+?>
+
+
     
     
     
