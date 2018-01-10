@@ -186,6 +186,14 @@ test.php 일부분
 ?>
 ```
 
+#### 실습과제 01 - 취소
+- bmi.php - form 키, 몸무게 입력 post방식 사용
+- bmi_result.php 
+	- bmi계산하여 출력
+	- 입력받아서 function으로 연산 후 출력	
+
+
+
 ```markdown
 
 ```
