@@ -22,6 +22,11 @@ Webserver construction Training Education In ComputerEng.
     - Web IDE @ Korea
     - URL : [GoormIDE](https://ide.goorm.io/)
     - 이거 존나 편함
+    
+- Slack
+    - Development Tool
+    - URL : [SLACK](https://slack.com/)
+    - 이것도 존나 좋음
 
 </hr>
 
@@ -122,6 +127,27 @@ test.php 일부분
     
     
     
+    
+#### [이론 - 작성 방법]
+- Web 개발 방법
+    - Model 1 방식
+        : presenter, view, Model이 한 곳에 함께 작성되는 방식
+
+    - Model 2 방식
+        MVC 방식
+            Model :  
+            View : 
+            Contorller : 
+
+            * BMI_VIEW, BMI_CONTLROLLER
+            * View와 Controller간의 통신 : Model
+
+
+
+
+
+
+
 
 You can use the [editor on GitHub](https://github.com/IKKIson/WebServerInPHP/edit/master/index.md) to maintain and preview the content for your website in Markdown files.
 
