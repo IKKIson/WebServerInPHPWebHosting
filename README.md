@@ -125,6 +125,15 @@ test.php 일부분
 
 #### Function in PHP
 - function Name(parameter)    
+- 함수 생성 시 'function' 와 함수명을 함께 명시해준다.
+- 파라미터와 함수 내부 작성은 기존의 언어들과 동일하다.
+- Example)
+```markdown
+	//View Login id and pw Function
+	function mytext($param1, $param2) {
+		return "아이디는 : ".$param1."<br>비밀번호는 : ".$param2."<br>";
+	}
+```
   
 #### 실습과제 01
 - 아이디 kpu, 비밀번호 1234로만 로그인해야'로그인 성공'을 출력하게 작성 
@@ -191,12 +200,6 @@ test.php 일부분
 - bmi_result.php 
 	- bmi계산하여 출력
 	- 입력받아서 function으로 연산 후 출력	
-
-
-
-```markdown
-
-```
     
     
 #### [이론 - 작성 방법]
@@ -214,3 +217,30 @@ test.php 일부분
             * View와 Controller간의 통신 : Model
 
 
+#### MySQL
+1. dothome에서 제공해주는 MySQL 유틸을 이용하여 데이터베이스 관리.
+2. dothome의 해당 웹호스팅 생성 시 설정한 FTP와 MySQL(데이터베이스) 두개의 계정을 이용하여 연결한다.
+- DB Connection 하기
+- test.php
+```markdown
+					//호스트주소, id, pw
+	$conn = mysqli_connect('localhost', 'shout2517', 'ihson83729405');
+	mysqli_select_db($conn, 'shout2517');//데이터베이스 명
+```
+
+3. DB Connection 후 쿼리 작성하여 사용
+- select * from table의 경우 
+    - 여러개의 row에서 하나씩 출력하고 싶거나 핸들링할 때 하니씩 fetch 해야된다.
+	- test.php 일부
+
+```markdown
+	while($row = mysqli_fetch_array($result)) {
+		echo $row['title']."<br>";
+	}
+```
+
+
+### 개발 TIP
+MySQL의 경우 #이 주석처리가 되는데 select 쿼리 사용 시 #이 들어가는 단어로 입력받게 되면 PHP가 인코딩하면 쿼리문에서 # 뒤부터는 주석이 되어 의도하지 않은 출력값이 나오게된다.
+Ex) 전체 내용이 출력되거나, 로그인문제 발생
+해결) 어느 정도의 시큐어 코딩이 필요하다.  

@@ -1,4 +1,7 @@
 <?php
+
+//Set MySQL of dothome
+
 					//호스트주소, id, pw
 $conn = mysqli_connect('localhost', 'shout2517', 'ihson83729405');
 mysqli_select_db($conn, 'shout2517');//데이터베이스 명
@@ -10,18 +13,16 @@ mysqli_select_db($conn, 'shout2517');//데이터베이스 명
 $sql = "select *from notice";
 
 if($conn){
-
 	$result = mysqli_query($conn, $sql);
 
 	//01 insert dml query
 	//var_dump($result);
 	
 	//02 select query
-	// select 조회
-	while($result = mysqli_fetch_arrary($result)) {
+	// select 조회 시
+	while($row = mysqli_fetch_array($result)) {
 		echo $row['title']."<br>";
 	}
-	
-	echo $result;
+
 }
 ?>
