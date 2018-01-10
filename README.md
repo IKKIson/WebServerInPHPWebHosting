@@ -125,7 +125,70 @@ test.php 일부분
 
 #### Function in PHP
     
-    
+  
+#### 실습과제 01
+- 아이디 kpu, 비밀번호 1234로만 로그인해야'로그인 성공'을 출력하게 작성 
+- test.php
+```markdown
+<?php
+	//get방식의 id에 있는 파라미터
+	$board_id = $_GET['id'];	
+	$type = $_get['board_type'];
+
+	//$sql = "select * from board where id = ".$board_id;
+
+	//파라미터 넘기기
+	echo 'test.php 입니닷!!'.$board_id."<br>"."타입은".$type;
+?>
+
+<form action="mypost.php" method="post">
+	<input type="text" name="id">
+	<input type="password" name="password">
+	<button>
+		로그인 하러 가기!!
+	</button>
+</form>
+```
+- mypost.php
+```markdown
+<?php
+	$id = $_POST['id'];
+	$pw = $_POST['password'];
+
+	//Not Using Func
+	//echo "아이디는 : ".$id."<br>비밀번호는 : ".$pw;
+	echo mytext($id, $pw);
+	echo login_check($id, $pw);
+
+	//View Login id and pw Function
+	function mytext($param1, $param2) {
+		return "아이디는 : ".$param1."<br>비밀번호는 : ".$param2."<br>";
+	}
+
+	//Login - ID Check Func
+	function id_check($param_id){
+		if($param_id == 'kpu'){
+			return '로그인 성공';
+		} else {
+			return '로그인 실패';
+		}
+		
+		
+	}
+	//Login Check Func
+	function login_check($param_id, $param_pw){
+		if($param_id == 'kpu' && $param_pw == 1234){
+			return '로그인 성공';
+		} else {
+			return '로그인 실패';
+		}
+	}
+?>
+```
+
+```markdown
+
+```
     
     
 #### [이론 - 작성 방법]
