@@ -124,7 +124,7 @@ test.php 일부분
 		?>
 
 #### Function in PHP
-    
+- function Name(parameter)    
   
 #### 실습과제 01
 - 아이디 kpu, 비밀번호 1234로만 로그인해야'로그인 성공'을 출력하게 작성 
@@ -212,9 +212,5 @@ test.php 일부분
 
             * BMI_VIEW, BMI_CONTLROLLER
             * View와 Controller간의 통신 : Model
-
-
-
-
 
 
