@@ -7,17 +7,11 @@ Webserver construction Training Education In ComputerEng.
 
 - Study PHP
     - [W3schools](https://www.w3schools.com/php/default.asp)
-
     - [TCPschool](http://tcpschool.com/php/php_intro_intro)
-
     - [opentutorial_CodingEverybody](https://www.opentutorials.org/course/3018)
-
     - [TutorialSPoint PHP](https://www.tutorialspoint.com/php/index.htm)
-
     - [TutorialSPoint PHP7](https://www.tutorialspoint.com/php7/index.htm)
-
     - [TutorialSPoint CakePHP](https://www.tutorialspoint.com/cakephp/index.htm)
-
     - [TutorialSPoint FuelPHP](https://www.tutorialspoint.com/fuelphp/index.htm)
 
 </hr>
@@ -25,9 +19,9 @@ Webserver construction Training Education In ComputerEng.
 ### Development
 #### IDE
 - Goorm
-Web IDE @ Korea
-URL : [GoormIDE](https://ide.goorm.io/)
-이거 존나 편함
+    - Web IDE @ Korea
+    - URL : [GoormIDE](https://ide.goorm.io/)
+    - 이거 존나 편함
 
 </hr>
 
@@ -73,12 +67,12 @@ URL : [GoormIDE](https://ide.goorm.io/)
 
 #### GET Method in PHP
 1. URL 주소를 이용한 GET방식
-http://ikkisonwebserverinphp.run.goorm.io/IKKIson/test.php?id=11&board_type=parametertest
-URL 주소 뒤에 '?'를 사용하여 이 후 나오는 것들은 파라미터값 사용으로 처리한다.
-URL 주소 : http://ikkisonwebserverinphp.run.goorm.io/IKKIson/test.php
-파라미터사용 : ?id=11
-파라미터 여러개사용 : ?id=11&board_type=parametertest
-	파라미터를 여러개 사용할 경우 '&'로 파라미터들을 구분한다.
+    - http://ikkisonwebserverinphp.run.goorm.io/IKKIson/test.php?id=11&board_type=parametertest
+    - URL 주소 뒤에 '?'를 사용하여 이 후 나오는 것들은 파라미터값 사용으로 처리한다.
+    - URL 주소 : http://ikkisonwebserverinphp.run.goorm.io/IKKIson/test.php
+    - 파라미터사용 : ?id=11
+    - 파라미터 여러개사용 : ?id=11&board_type=parametertest
+        - 파라미터를 여러개 사용할 경우 '&'로 파라미터들을 구분한다.
 	
 2. GET 방식 예제
 test.php 일부분
