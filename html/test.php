@@ -1,18 +1,11 @@
 <?php
-	//get방식의 id에 있는 파라미터
-	$board_id = $_GET['id'];	
-	$type = $_get['board_type'];
+					//호스트주소, id, pw
+$conn = mysql_connect('localhost', 'kpucom', 'e517e517');
+mysqli_connect($conn, 'kpucom');//데이터베이스 명
 
-	//$sql = "select * from board where id = ".$board_id;
+$sql = "insert into notice (title, content) values ('제목', '내용')";
 
-	//파라미터 넘기기
-	echo 'test.php 입니닷!!'.$board_id."<br>"."타입은".$type;
+$result = mysqli_query($conn, $sql);
+echo $result;
+
 ?>
-
-<form action="mypost.php" method="post">
-	<input type="text" name="id">
-	<input type="password" name="password">
-	<button>
-		로그인 하러 가기!!
-	</button>
-</form>
