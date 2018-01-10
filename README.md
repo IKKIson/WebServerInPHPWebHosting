@@ -29,6 +29,7 @@ Webserver construction Training Education In ComputerEng.
 ### Class 01 IDE Setting for PHP in Web
 1. Using GoormIDE
 2. Make Project PHP
+3. if 
 
 #### PHP Basic
 1. Just Print Out on Web
@@ -41,7 +42,7 @@ Webserver construction Training Education In ComputerEng.
 		?>
 
 2. Value Define
--$value
+- $value
 '$' and Naming 
 
 		<!-- Get/Set Data-->
@@ -60,7 +61,9 @@ Webserver construction Training Education In ComputerEng.
 
 </hr>
     
-### Class 02 GET & POST Method Page URL Parameter
+### Class 02 PHP GET/POST and function
+
+#### GET & POST Method Page URL Parameter
 1. 게시판, 글, 글리스트 등 조회 기능 시 GET으로 작성
     - GET방식의 경우 URL주소에 파라미터 값이 노출이되므로 게시판, 글 등 조회기능에 주로사용한다.
 2. 로그인, 게시글 작성 등 생성, 수정 기능 시 POST로 작성
