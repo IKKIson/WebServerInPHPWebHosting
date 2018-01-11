@@ -30,11 +30,22 @@ Webserver construction Training Education In ComputerEng.
 
 - Visual Studio Code (VScode)
     - 통합 IDE
-    - URL : [VScode](https://slack.com/)
+    - URL : [VScode]()
     - 설치한 확장프로그램
 	    - ftp-kr
 		- metarial icon?
-		- 
+
+- Bitnami WAMP
+    - 로컬에서 간단하게 구축하는 AMP 자체 서버
+    - URL : [WAMP]()
+
+- CodeIgniter
+    - PHP를 이용한 웹사이트 개발을 위한 도구모음. 프레임워크
+    - URL : [CodeIgniter](https://codeigniter.com/)
+	- URL : [CodeIgniter 한국포럼](http://www.codeigniter-kr.org/)
+	- URL : [CodeIgniter 한글메뉴얼](http://www.ciboard.co.kr/user_guide/kr/)
+	- URL : [CodeIgniter 생활코딩 강의](https://opentutorials.org/course/697/3824)
+
 
 </hr>
 
@@ -285,5 +296,47 @@ Ex) 전체 내용이 출력되거나, 로그인문제 발생
 #### Class 02 - 실습
 1. 별도의 DB서버(강사님 구축)에 여러 학생들이 접근한다.
 2. 
+
+#### Select로 받아온 데이터 처리
+Select Query를 실행하여 받아오 테이블 형태의 데이터를 테이블 1즐씩(column) 읽어 row값을 사용하면 된다.
+여기서 사용하게되는 mysqli_fetch_array()함수를 사용하여 테이블의 칼럼을 차례대로 가져올 수 있다.
+
+- Example)
+
+```markdown
+ 		//Execute Query
+        $result = mysqli_query($conn, $sql);
+ 		while($row = mysqli_fetch_arrary($result) ){
+            echo "</hr>";
+            echo $row['title']." // ";
+            echo $row['content']." // ";
+            echo $row['name']."<br>";
+            echo "</hr>";
+        }
+```
+
+여기서 이 함수를 사용하면서 함수를 찾지 못하거나 참조하지 못하는 경우 쿼리실행 결과를 저장한 변수에서 다른 처리방법이있다. $result->fetch_array()
+
+- Example)
+
+```markdown
+ 		//Execute Query
+        $result = mysqli_query($conn, $sql);
+        while($row = $result->fetch_array()){
+            echo "</hr>";
+            echo $row['title']." // ";
+            echo $row['content']." // ";
+            echo $row['name']."<br>";
+            echo "</hr>";
+        }
+```
+
+http://php.net/manual/kr/mysqli-result.fetch-array.php
+http://alleysark.tistory.com/19
+https://stackoverflow.com/questions/14456529/mysqli-fetch-array-while-loop-columns
+https://m.blog.naver.com/PostView.nhn?blogId=diceworld&logNo=220295811114&proxyReferer=https%3A%2F%2Fwww.google.co.kr%2F
+https://stackoverflow.com/questions/15181095/error-message-in-php-mysqli-fetch-array-expects-parameter-1
+
+
 
 
