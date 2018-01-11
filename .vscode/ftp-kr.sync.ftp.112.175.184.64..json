@@ -1,0 +1,54 @@
+{
+    "type": "d",
+    "name": "",
+    "size": 4096,
+    "files": [
+        {
+            "type": "-",
+            "name": ".bash_logout",
+            "size": 20
+        },
+        {
+            "type": "-",
+            "name": ".bash_profile",
+            "size": 188
+        },
+        {
+            "type": "-",
+            "name": ".bashrc",
+            "size": 132
+        },
+        {
+            "type": "-",
+            "name": "README.md",
+            "size": 7259
+        },
+        {
+            "type": "-",
+            "name": "_config.yml",
+            "size": 29
+        },
+        {
+            "type": "d",
+            "name": "html",
+            "size": 4096,
+            "files": [
+                {
+                    "type": "-",
+                    "name": "delete.php",
+                    "size": 505
+                },
+                {
+                    "type": "-",
+                    "name": "mypost.php",
+                    "size": 769
+                }
+            ]
+        },
+        {
+            "type": "-",
+            "name": "집중실무교육포스터.jpg",
+            "size": 810105
+        }
+    ]
+}

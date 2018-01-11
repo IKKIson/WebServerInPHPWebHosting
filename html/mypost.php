@@ -31,3 +31,8 @@
 		}
 	}
 ?>
+<form action="test_form.php">
+	<button>
+		뒤로가기
+	</button>
+</form>

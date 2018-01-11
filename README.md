@@ -28,6 +28,14 @@ Webserver construction Training Education In ComputerEng.
     - URL : [SLACK](https://slack.com/)
     - 이것도 존나 좋음
 
+- Visual Studio Code (VScode)
+    - 통합 IDE
+    - URL : [VScode](https://slack.com/)
+    - 설치한 확장프로그램
+	    - ftp-kr
+		- metarial icon?
+		- 
+
 </hr>
 
 ## Day 01 20180110
@@ -200,7 +208,10 @@ test.php 일부분
 - bmi_result.php 
 	- bmi계산하여 출력
 	- 입력받아서 function으로 연산 후 출력	
-    
+
+</hr>
+
+### Class 03 MySQL & Query in PHP  
     
 #### [이론 - 작성 방법]
 - Web 개발 방법
@@ -244,3 +255,35 @@ test.php 일부분
 MySQL의 경우 #이 주석처리가 되는데 select 쿼리 사용 시 #이 들어가는 단어로 입력받게 되면 PHP가 인코딩하면 쿼리문에서 # 뒤부터는 주석이 되어 의도하지 않은 출력값이 나오게된다.
 Ex) 전체 내용이 출력되거나, 로그인문제 발생
 해결) 어느 정도의 시큐어 코딩이 필요하다.  
+
+</hr>
+    
+## Day 02 20180111
+### Class 01 & 02 SQL Query & Model 분리(DI) in PHP
+
+#### SQL - Delete Query 
+1. 1일차 3교시와 같은 방식으로 Delete 기능을 구현하는 코드를 작성한다.
+
+
+
+#### PHP function 분리(Util 사용을 위한 의존성 분리)
+1. DB 사용을 위하여 util.php에 function 선언
+2. DB를 분리하여 사용하여 모듈화와 재사용성 높이기.
+3. require()를 사용한 함수 import
+	- 요즘은 include_once()함수를 사용한다.
+	- 중복호출을 막기 위해 require 대신 include_once를 사용한다.
+	- include_once의 파라미터값인 디렉토리 주소를 절대경로로 사용하기 위하서는 인자값을 $_SERVER['DOCUMENT_ROOT']."/소스코드파일주소" 를 사용하면된다.
+
+4. 다수 server 사용 시 일관성 
+    - DB 동기화
+	- MySQL 자체 서버를 외부에 구축. DB서버를 따로 두어 웹서버들이 DB서버를 참조
+	- Image와 같은 리소스들이 많은 경우 리소스들을 별도의 서버를 만들어 다른 웹서버들이 참조하면서 동기화할 수 있게 해준다.
+
+5. REQUEST의 GET과 POST 방식을 구분/분개
+
+
+#### Class 02 - 실습
+1. 별도의 DB서버(강사님 구축)에 여러 학생들이 접근한다.
+2. 
+
+
