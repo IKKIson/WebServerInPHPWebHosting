@@ -21,7 +21,7 @@
         {
             "type": "-",
             "name": "README.md",
-            "size": 7259
+            "size": 9659
         },
         {
             "type": "-",
@@ -35,13 +35,38 @@
             "files": [
                 {
                     "type": "-",
-                    "name": "delete.php",
-                    "size": 505
+                    "name": "util.php",
+                    "size": 1740
                 },
                 {
                     "type": "-",
-                    "name": "mypost.php",
-                    "size": 769
+                    "name": "delete.php",
+                    "size": 675
+                },
+                {
+                    "type": "-",
+                    "name": "test.php",
+                    "size": 706
+                },
+                {
+                    "type": "-",
+                    "name": "ALZ1CE3.tmp",
+                    "size": 2541
+                },
+                {
+                    "type": "-",
+                    "name": "php1일차 소스코드.zip",
+                    "size": 2541
+                },
+                {
+                    "type": "-",
+                    "name": "database.sql",
+                    "size": 0
+                },
+                {
+                    "type": "-",
+                    "name": "index.php",
+                    "size": 1748
                 }
             ]
         },
