@@ -340,3 +340,15 @@ https://stackoverflow.com/questions/15181095/error-message-in-php-mysqli-fetch-a
 
 
 
+### Class 03 
+
+#### 깃허브를 이용한 팀프로젝트 세팅
+
+
+#### 실습 01 Slack Chat with Web
+
+#### 실습 02
+1. MVC 사용
+2. local host DB 사용
+3. htaccess로 index.php 없애기
+4. 공지사항 만들기
